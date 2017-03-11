@@ -72,7 +72,7 @@ public class CarsController {
             throw new BadRequestException("Request id is not equal Car.id");
         }
         carsRepository.changeName(car.getId(), car.getName());
-        return carsRepository.byId(car.getId()).orElseThrow(() -> new NotFoundException("Car not found"));
+        return carsRepository.byId(car.getId()).orElseThrow(() -> new NotFoundException("Car with id=" + car.getId() + " not found"));
     }
 
     private String deleteCar(Request request, Response response) {

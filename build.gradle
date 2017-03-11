@@ -73,7 +73,6 @@ repositories {
 }
 
 dependencies {
-    ext.jacksonVersion = '2.8.7'
     ext.rinca = '0.6.1'
 
     compile 'org.slf4j:slf4j-api:1.7.+'
@@ -98,6 +97,7 @@ dependencies {
     testCompile 'junit:junit:4.+'
     testCompile 'org.hamcrest:hamcrest-junit:2.0.+'
     testCompile 'org.mockito:mockito-core:2.+'
+
     integrationTestCompile 'com.ninja-squad:DbSetup:2.1.+'
     integrationTestCompile 'com.despegar:spark-test:1.1.+'
 }
